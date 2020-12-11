@@ -1,6 +1,6 @@
 {
 	"name": "advent-of-code-cli",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": "ElCholoGamer <josedanielgrayson@gmail.com>",
 	"description": "A command-line interface I made because I was bored",
 	"license": "MIT",
@@ -36,7 +36,7 @@
 		"inquirer": "^7.3.3"
 	},
 	"files": [
-		"./dist/**/*"
+		"dist/**/*"
 	],
 	"devDependencies": {
 		"@types/clui": "^0.3.0",
