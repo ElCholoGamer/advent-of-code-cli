@@ -1,8 +1,8 @@
-name: Build
+name: Publish
 
 on:
   release:
-    types: [created]
+    types: [published]
 
 jobs:
   build:
@@ -18,5 +18,9 @@ jobs:
     needs: build
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
       - name: Publish to NPM
-        run: yarn publish
+        run: yarn publish --new-version ${{ github.event.release.tag_name }}

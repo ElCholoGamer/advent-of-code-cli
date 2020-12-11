@@ -1,4 +1,4 @@
-# Advent of Code CLI &middot; ![Build](https://github.com/ElCholoGamer/advent-of-code-cli/workflows/Build/badge.svg)
+# Advent of Code CLI &middot; ![Build](https://github.com/ElCholoGamer/advent-of-code-cli/workflows/Publish/badge.svg)
 
 A decently command-line interface I made because I was bored.
 
