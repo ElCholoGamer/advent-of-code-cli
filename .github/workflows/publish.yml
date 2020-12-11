@@ -2,7 +2,7 @@ name: Publish
 
 on:
   release:
-    types: [published]
+    types: [created]
 
 jobs:
   build:
@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install dependencies
-        run: yarn install
+        run: yarn
       - name: Run build
         run: yarn build
   publish:
@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: '12.x'
           registry-url: https://registry.npmjs.org/
       - name: Publish to npm
         run: yarn publish --new-version ${{ github.event.release.tag_name }}
