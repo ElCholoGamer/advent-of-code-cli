@@ -1,4 +1,8 @@
-# Advent of Code CLI &middot; ![Build](https://github.com/ElCholoGamer/advent-of-code-cli/workflows/Publish/badge.svg)
+# Advent of Code CLI
+
+![build][build]
+![dependencies][dependencies]
+![license][license]
 
 A decently command-line interface I made because I was bored.
 
@@ -27,5 +31,8 @@ A menu should pop up, where you must enter your session cookie to send with requ
 
 (If you don't have a session cookie, you can grab it on the "Application" tab of mostly any browser's DevTools, stored as "session" in the site cookies)
 
+[build]: https://img.shields.io/github/workflow/status/elchologamer/advent-of-code-cli/Build
+[license]: https://img.shields.io/npm/l/advent-of-code-cli?color=orange
+[dependencies]: https://img.shields.io/david/elchologamer/advent-of-code-cli
 [npm]: https://npmjs.com
 [yarn]: https://yarnpkg.com
